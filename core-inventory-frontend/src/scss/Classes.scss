@@ -1,0 +1,35 @@
+.page-title {
+    margin-top: 30px;
+    
+    span {
+        font-size: 33px;
+    }
+}
+
+.resource-not-found {        
+    margin-top: 130px;
+    text-align: center;
+    
+    span {
+        font-size: 50px;
+        font-weight: 200;
+    }
+}
+
+.alert {        
+    bottom: 0;
+    left: 50%;        
+    margin: 30px auto;
+    max-width: 300px;
+    text-align: center;
+    transform: translateX(-50%);    
+    position: fixed;  
+    z-index: 1;     
+}
+
+.item-form {
+    margin: 60px auto 0;
+    max-width: 400px;
+    width: 100%;
+}
+

@@ -1,0 +1,89 @@
+.item {
+    @include containerPadding;
+
+    .item-detail {
+        background-color: $white;
+        border: 1px solid $denim;
+        border-radius: 5px;
+        margin: 60px auto 0;
+        max-width: 750px;
+        text-align: center;   
+        width: 100%;
+        
+        img {
+            height: 280px;        
+            width: 300px;
+        }
+    
+        .options {         
+    
+            .btn-info, .btn-danger {
+                margin: 35px 0;
+                width: 115px;
+            }
+        }
+    
+        .quantity {
+            margin-top: 25px;       
+            
+            .col-auto {
+                padding: 0;
+            }
+    
+            .btn[disabled] {
+                cursor: default;
+            }
+    
+            .btn-primary, .btn-secondary {
+                font-weight: bolder;            
+                width: 50px;
+            }
+    
+            .btn-primary {      
+                border-radius: 4px 0 0 4px;                  
+            }
+    
+            .btn-secondary {      
+                border-radius: 0 4px 4px 0;            
+            }
+    
+            .btn-success, .btn-dark {
+                margin: 15px 5px 0px;
+                width: 100px;
+            }        
+    
+            input {
+                border-radius: 0;
+                text-align: center;
+                width: 150px;            
+            }
+        }
+    
+        .info {
+            padding: 40px;
+    
+            .card {            
+                margin-top: 20px;
+            }        
+    
+            .card-body {
+                align-items: center;
+                display: flex;
+                font-size: 17px;
+                height: 115px;                
+                justify-content: center;
+            }
+        }
+
+        @include phones {
+
+            .options {
+    
+                .btn-info, .btn-danger {
+                    margin: 35px 0;
+                    width: 105px;
+                }
+            }        
+        }
+    }        
+}

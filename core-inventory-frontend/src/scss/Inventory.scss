@@ -1,0 +1,84 @@
+.inventory {  
+    @include containerPadding;
+    text-align: center;
+
+    .category-bar {
+        
+        .btn-primary {
+            border-color: $white;
+        }
+    
+        .btn-group, .btn-group-vertical {            
+            display: inline-flex;            
+            margin: 0 auto;
+            max-width: 810px;
+            padding: 10px;     
+            position: relative;
+            vertical-align: middle;
+            width: 100%;
+        }
+    }
+
+    .search-bar {
+        
+        .input-group {
+            margin: 20px auto 0;
+            max-width: 360px;
+            width: 100%;
+        }
+    }
+    
+    .items-grid {                
+        margin: 40px auto 0;
+        max-width: 1000px;            
+        width: 100%;  
+        
+        .item-box-container {            
+            margin-bottom: 40px;
+            padding: 0 20px;            
+
+            a {
+                color: inherit;            
+                text-decoration: none;            
+            }
+    
+            .item-box { 
+                align-items: center;
+                background-color: $white;           
+                border: 1px solid $denim;            
+                border-radius: 5px;
+                cursor: pointer;
+                height: 100%;            
+                margin: 40px auto 0;
+                padding: 20px 10px;                      
+    
+                img {
+                    border-radius: 5px;
+                    height: 100px;
+                    margin-bottom: 20px;
+                    width: 100px;
+                }
+    
+                .name {
+                    background-color: $denim;
+                    border-radius: 5px 5px 0 0;
+                    color: $white;
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin: 0;
+                    overflow-wrap: break-word;
+                    padding: 10px 25px;                 
+                    width: 100%;                               
+                }
+                
+                .details {
+                    font-weight: 400;                
+                    background-color: $emerald;
+                    border-radius: 0 0 5px 5px;
+                    margin: 0;
+                    padding: 10px;
+                }
+            }                    
+        }        
+    }
+}

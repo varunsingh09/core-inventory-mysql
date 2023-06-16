@@ -1,0 +1,69 @@
+.header {       
+    
+    .navbar {       
+        background-color: $white;    
+        border-bottom: 2px solid $white-smoke;
+        margin: 0 -15px;
+        padding: 9px 35px;     
+    
+        .brand {                     
+            font-size: 32px;            
+            padding-bottom: 10px;
+            padding-right: 30px;
+            text-decoration: none;
+        }
+    
+        .mr-auto {
+            padding-left: 0px;
+        }
+    
+        .nav-link {
+            font-size: 18px;
+            margin: 0 15px 0 0;            
+        }
+        
+        .navbar-toggler:focus {
+            outline: 0px auto;            
+        }
+
+        #basic-navbar-nav {
+            transition: 0.5s all;
+        }
+    }
+    
+    .header-logged-out {
+        align-items: center;
+        background-color: $white;
+        border-bottom: 2px solid $white-smoke;
+        padding: 15px 20px;    
+        text-align: center;
+
+        .brand {                
+            color: $denim;
+            font-size: 32px;
+            font-weight: 600;
+            text-decoration: none;
+        } 
+    }
+
+    @include phones {
+
+        .log-out-button {
+            margin: 12px 0 15px;
+        }
+    }
+
+    @include large-phones {
+
+        .log-out-button {
+            margin: 12px 0 15px;
+        }
+    }
+
+    @include tablets {
+
+        .log-out-button {
+            margin: 12px 0 15px;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+.categories {
+    @include containerPadding;
+    margin: 0 auto;
+    max-width: 970px;    
+    text-align: center;
+    width: 100%;      
+
+    .options {
+        margin: 70px 0 15px;
+
+        .btn {
+            margin: 7px;
+        }
+    }
+
+    .add-category {               
+        padding: 0;
+
+        .badge {            
+            background-color: $denim;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: 300;
+            padding: 15px 55px;
+        }
+    }
+    
+    .categories-list {
+        margin: 35px auto 0;                
+        text-align: left;        
+        word-wrap: break-word;  
+
+        .letter {
+            color: $denim;
+            font-size: 25px;
+            font-weight: bolder;
+            margin: 25px 0 5px;
+            padding: 0 0 10px 0;            
+
+            ::after {
+                background-color: $cornflower-blue;
+                bottom: 0;
+                content: '';                
+                left: 50%;                
+                min-height: 1px;
+                position: absolute;    
+                transform: translateX(-50%);            
+                width: 100%;
+            }
+        }
+        
+        .badge {
+            background-color: $azure;
+            border: 1px solid $denim;
+            color: $denim;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 400;
+            margin: 10px 10px 5px 0;
+            padding: 10px;
+        }
+    }
+}

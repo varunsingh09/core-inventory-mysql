@@ -1,0 +1,95 @@
+.landing-page {
+    align-items: center;    
+    padding: 40px 35px 120px;   
+    
+    .hero {
+        padding-right: 45px;
+        text-align: left;        
+
+        h2 {    
+            color: $cornflower-blue;            
+            font-size: 55px;     
+        }
+
+        p {                        
+            color: $mako;
+            font-size: 18px;
+            font-weight: 350;
+            margin-top: 15px;
+        }
+
+        img {             
+            margin-top: 20px;
+            width: 70%;
+        }
+    } 
+
+    .log-in-form {              
+        max-width: 270px;
+        margin-top: 20px;
+        padding: 0;
+        width: 100%;
+    }
+    
+    @include phones {
+
+        padding: 40px 0px 100px;
+
+        .hero {
+            padding: 0 65px;
+            text-align: center;
+            
+            h2 {                    
+                font-size: 22px;          
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+            img {                             
+                display: none;
+            }
+        }    
+    }
+       
+    @include large-phones {
+
+        padding: 40px 0px 110px;
+
+        .hero {
+            padding: 0 65px;        
+            text-align: center;
+            
+            h2 {                    
+                font-size: 25px;          
+            }
+
+            p {
+                font-size: 16px;
+            } 
+
+            img {                             
+                display: none;
+            }
+        }    
+    }
+    
+    @include tablets {
+    
+        .hero {            
+            
+            h2 {                    
+                font-size: 33px;          
+            }
+
+            p {
+                font-size: 15px;
+            } 
+
+            img {                             
+                width: 75%;
+            }
+        }
+    } 
+}
